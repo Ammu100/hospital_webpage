@@ -1,132 +1,96 @@
 body{
-padding: 0;
-margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
-.tf_topbar {
-    width: 100%;
+.tf_topbar{
+    background-color: rgb(0, 0, 0);
     height: 40px;
-    background:rgba(1, 54, 1, 0.938);
-    position: sticky;
+    /* position: fixed !important;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 99 !important;
+    width: 100%;
+    position: absolute; */
 }
 
-.tf_topbar_linkcontainer a{
+/* .navbar-toggler {
+    color: #000 !important;
+
+} */
+.abc{
+    background: black !important;
+}
+
+.nav-link{
+    color: black !important;
+}
+
+li, li a , .add{
+    list-style: none;
     text-decoration: none;
-    color: aliceblue;
-    
+    color: rgb(252, 250, 250);
+    margin-right: 10px;
+    font-size: 13px;
 }
 
-.tf_topbar_icon a{
-    color: aliceblue;
+@media screen and (max-width: 768px) {
+    .tf_topbar_icon{
+        justify-content: center;
+    }
+}
+
+.popModel {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: #000000b3;
+    padding-top: 17%;
+}
+ 
+.closeBtn {
+    position: absolute;
+    top: 25%;
+    right: 42%;
+    margin-right: 15px;
+    z-index: 999;
+
+}
+
+.tf__banner{
+
+    background-image: url(a.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .tf_main-menu{
+    position: fixed !important;
+    width: 100%;
+    top: 40px !important;
+    left: 0;
+    z-index: 999 !important;
+    position: relative;
+
+} */
+
+.tf_banner_counter h3, .tf_banner_counter p {
+    color: black;
 }
 
 .tf_common_btn{
-
-    border: 2px solid rgb(0, 174, 255);
-    padding: 7px;
-    border-radius: 20px;
-    background-color:  rgb(0, 174, 255);
+    border: 2px solid  rgb(0, 162, 255);
+    border-radius: 15px;
+    background-color: rgb(0, 162, 255);
+    text-decoration: none;
+    color: aliceblue;
 }
 
-.tf_main_menu{
-    position:sticky ;
-    top: 0;
-}
-
-.navbar-brand img{
-    height: 40px;
-}
-
-.tf_banner{
-    background-image: url(https://html.themefax.com/madifax/images/banner_bg.jpg);
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    
-}
-
-
-.tf_banner_img{
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    position: relative;
-    z-index: 1;}
-
-.tf_banner_img ::after{
-    
-    position: absolute;
-    content: "";
-    background-image: url(banner_img_bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 680px;
-    height: 680px;
-    z-index: -1;
-    right: -62px;
-    
-    animation: rotate_animi linear 30s infinite;
-    -webkit-animation: rotate_animi linear 30s infinite;
-  
-    
-}
-
-/* @media screen and (max-width: 480px) {
-    .tf_banner_img{
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .tf_banner_img::after{
-        width: 200px;
-        height: 200px;
-        right: auto;
-    } */
-    
-
-
-/* .react{
-    position: absolute;
-    top: 555px;
-    right: -48px;
-    width: 70px !important;
-    height: 70px !important;
-}
-
-.video{
-    position: absolute;
-    top: 212px;
-    right: 128px;
-    width: 70px !important;
-    height: 70px !important;
-}
-
-.call{
-    position: absolute;
-    top: 365px;
-    right: -26px;
-    width: 70px !important;
-    height: 70px !important;
-}
-
-.video{
-    position: absolute;
-    top: 559px;
-    right: -147px;
-    width: 167px !important;
-    height: 90px !important;
+/* .tf_common_btn :hover{
+    background-color: aquamarine;
 } */
-
-
-
-
-
-
-
-
