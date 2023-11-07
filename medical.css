@@ -40,6 +40,17 @@ li, li a , .add{
     .tf_topbar_icon{
         justify-content: center;
     }
+
+    .img1{
+        width: 280px !important;
+    }
+
+    .img2{
+        width: 227px !important;
+        bottom: -140px !important;
+        right: 18px !important;
+        height: 374px !important;
+    }
 }
 
 .popModel {
@@ -61,12 +72,26 @@ li, li a , .add{
 
 }
 
-.tf__banner{
+.tf_banner{
 
     background-image: url(a.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.tf_banner_img::after{
+    background-image: url(banner_img_bg.png) !important;
+    /* position: absolute !important; */
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 680px;
+    height: 680px; */
+    /* z-index: -1 !important;
+    right: -17px;
+    top: 207px; */
 }
 
 /* .tf_main-menu{
@@ -80,7 +105,7 @@ li, li a , .add{
 } */
 
 .tf_banner_counter h3, .tf_banner_counter p {
-    color: black;
+    color: rgb(0, 132, 255)
 }
 
 .tf_common_btn{
@@ -91,6 +116,56 @@ li, li a , .add{
     color: aliceblue;
 }
 
-/* .tf_common_btn :hover{
-    background-color: aquamarine;
+.tf_faq_details .card{
+    background-color: rgb(165, 239, 252);
+}
+
+.img1{
+    height: 420px;
+    width: 400px;
+}
+
+.img2{
+    position: absolute;
+    bottom: -78px;
+    right: 44px;
+    width: 310px;
+    height: 360px;
+}
+
+.img2 .tf_play_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* .tf_about_iteam{
+    margin-top: 45px;
+    margin-bottom: 38px;
 } */
+
+.tf_about_iteam li{
+    color: black !important;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: var(--parafont);
+    width: 50%;
+    position: relative;
+    padding-left: 33px;
+    /* margin-bottom: 18px; */
+}
+
+
+
+.fas{
+    font-weight: 900;
+}
+
+.tf_service{
+    background-image: url(service_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+

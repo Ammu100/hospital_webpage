@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,14 @@
     <link rel="stylesheet" href="medical.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -29,7 +38,8 @@
                             <a href="mailto:example@gmail.com"><i class="fas fa-envelope mr-2"></i>support@gmail.com</a>
                         </li>
 
-                        <p class="add mt-2"><i class="fas fa-map-marker-alt mr-2"></i>2767 Sunrise Street, NY 1002, USA</p>
+                        <p class="add mt-2"><i class="fas fa-map-marker-alt mr-2"></i>2767 Sunrise Street, NY 1002, USA
+                        </p>
 
                     </ul>
                 </div>
@@ -54,7 +64,7 @@
     </section>
 
     <!-- Second Navbar -->
-    <nav class="navbar tf_main-menu navbar-expand-sm navbar-dark bg-light">
+    <nav class="navbar tf_main-menu navbar-expand-sm sticky-top navbar-dark bg-light">
         <div class="container">
             <a class="navbar-brand" href="javascript:void(0)"><img src="Logo_1.png" alt="" style="height: 30px;"></a>
             <button class="navbar-toggler  abc " type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -72,8 +82,8 @@
                         <a class="nav-link" href="javascript:void(0)">Services</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown">Pages <i class="far fa-plus"></i></a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages <i
+                                class="far fa-plus"></i></a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">become a doctor</a></li>
                             <li><a class="dropdown-item" href="#"> Blog Details</a></li>
@@ -101,10 +111,10 @@
                     </li>
                 </ul>
                 <form class="d-flex">
-                   <a role="button" id="btn" class="">
-                    <i class="fa fa-search text-light mt-2 mr-2 fs-4 text-dark
+                    <a role="button" id="btn" class="">
+                        <i class="fa fa-search text-light mt-2 mr-2 fs-4 text-dark
                     " aria-hidden="true"></i>
-                   </a>
+                    </a>
                     <button class="btn btn-primary" type="button">Appointment</button>
                 </form>
             </div>
@@ -113,20 +123,21 @@
 
     <div class="popModel d-none" id="popModel">
         <div class="closeBtn">
-            <a class="text-white" role="button" id="btn1"><span class="close_search"><i class="fa fa-times fs-4" aria-hidden="true"></i></span></a>
+            <a class="text-white" role="button" id="btn1"><span class="close_search"><i class="fa fa-times fs-4"
+                        aria-hidden="true"></i></span></a>
         </div>
         <div class="menu_search text-center">
             <form>
                 <input type="text" placeholder="Search">
                 <button class="tf__common_btn" type="submit">Search</button>
-                
+
             </form>
         </div>
     </div>
 
     <!-- banner start -->
 
-    <section class="tf__banner">
+    <section class="tf_banner">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-xxl-5  col-md-9 col-xl-6 col-lg-7 wow fadeInLeft py-5 my-5" data-wow-duration="1s">
@@ -152,8 +163,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xxl-6 col-lg-5 col-xl-6 wow fadeInRight" data-wow-duration="1s">
-                    <div class="tf__banner_img">
+                <div class="col-xxl-6 col-lg-5 col-xl-6 tf_banner_img wow fadeInRight" data-wow-duration="1s">
+                    <div class="">
                         <div class="img">
                             <img src="c.png" alt="img" class="img-fluid w-100">
                         </div>
@@ -175,23 +186,304 @@
         </div>
     </section>
 
+    <!-- about section -->
+
+    <div class="tf_about py-5 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-sm-9  col-lg-5 col-md-7 wow fadeInLeft" data-wow-duration="1s">
+                    <div class="about_img">
+                        <div class="img1">
+                            <img src="img1.jpg" alt="image" class="img-fluid w-100">
+                        </div>
+                        <div class="img2 mb-5">
+                            <img src="img2.jpg" alt="about img" class="img-fluid w-100">
+                            <a class="tf_play_btn venobox" data-autoplay="true" data-vbtype="video"
+                                href="https://youtu.be/nqye02H_H6I">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-sm-12 col-lg-7  wow fadeInRight" data-wow-duration="1s">
+                    <div class="tf_common_heading">
+                        <h5 class="mb-3">About us</h5>
+                        <h1 class="mb-4">The Great Place of Medical Hospital Center.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Quis ipsum susp endisse ultrices gravida tempor incididu
+                            ut labore et dolore magna aliqua. Quis ipsum susp endisse ultrices gravida.</p>
+                    </div>
+
+                    <ul class="tf_about_iteam d-flex flex-wrap">
+                        <li>Ambulance Services</li>
+                        <li>Oxizen on Wheel</li>
+                        <li>Pharmacy on Clinic</li>
+                        <li>On duty Doctors</li>
+                        <li>24/7 Medical Emergency</li>
+                    </ul>
+                    <a href="about.html" class="tf_common_btn">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- service -->
+
+    <div class="tf_service py-5">
+        <div class="tf_service_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h5 class="text-primary"> Our service</h5>
+                        <h1 class="mb-4">Our Madical Service</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="service-1.jpg" class="card-img-top" height="300px">
+                                    <hr>
+                                    <h1 class="">Online Monitoring</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia
+                                        quaerat
+                                        ipsam
+                                        hic sunt quaerat!</p>
+                                    <p>read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="service-2.jpg" class="card-img-top" height="300px">
+                                    <hr>
+                                    <h1 class="">Holter Heart surgery</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia
+                                        quaerat
+                                        ipsam
+                                        hic sunt quaerat!</p>
+                                    <p>read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="service-3.jpg" class="card-img-top" height="300px">
+                                    <hr>
+                                    <h1 class="">Diagnose & Research</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia
+                                        quaerat
+                                        ipsam
+                                        hic sunt quaerat!</p>
+                                    <p>read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                        
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="service-2.jpg" class="card-img-top" height="300px">
+                                    <hr>
+                                    <h1 class="">Online Monitoring</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia
+                                        quaerat
+                                        ipsam
+                                        hic sunt quaerat!</p>
+                                    <p>read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="service-2.jpg" class="card-img-top" height="300px">
+                                    <hr>
+                                    <h1 class="">Holter Heart surgery</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia
+                                        quaerat
+                                        ipsam
+                                        hic sunt quaerat!</p>
+                                    <p>read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- faq's section -->
+
+    <div class="tf_faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 my-5 py-4">
+                    <div class="tf_comman_header text-center">
+                        <h5>FAQ</h5>
+                        <h1>Frequently Asked Questions</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="tf_faq_details">
+                        <div id="accordion">
+                            <div class="card mb-3">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                          <span class="mr-2 fs-3 text-primary">+</span>  What Happens To My Sample Once I Have Provided It?
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        do isus mods
+                                    mpor incididunt ut labore et dolore magna aliqua. Ut en onim ad minim on
+                                    adipiscing elit veniam.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn collapsed" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            <span class="mr-2 fs-3 text-primary">+</span> Where Can I Go To Provide A Sample For Testing?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        do isus mods
+                                    mpor incididunt ut labore et dolore magna aliqua. Ut en onim ad minim on
+                                    adipiscing elit veniam.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <span class="mr-2 fs-3 text-primary">+</span>  What Will Laboratory Testing Cost Me? 
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        do isus mods
+                                        mpor incididunt ut labore et dolore magna aliqua. Ut en onim ad minim on
+                                        adipiscing elit veniam.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <span class="mr-2 fs-3 text-primary">+</span> Can I Make Appointments by Phone? 
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        do isus mods
+                                    mpor incididunt ut labore et dolore magna aliqua. Ut en onim ad minim on
+                                    adipiscing elit veniam.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <span class="mr-2 fs-3 text-primary">+</span> Using Innovative Technology
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        do isus mods
+                                        mpor incididunt ut labore et dolore magna aliqua. Ut en onim ad minim on
+                                        adipiscing elit veniam.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="tf_faq-img">
+                        <img src="faq-img.jpg" alt="image" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
     <script>
         var btn = document.getElementById("btn")
         btn.onclick = function () {
             $('#popModel').removeClass('d-none')
         };
- 
+
         var btn1 = document.getElementById("btn1")
         btn1.onclick = function () {
             $('#popModel').addClass('d-none')
         };
-
-       
     </script>
 </body>
 
