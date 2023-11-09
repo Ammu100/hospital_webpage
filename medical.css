@@ -1,11 +1,11 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.tf_topbar{
+.tf_topbar {
     background-color: rgb(0, 0, 0);
     height: 40px;
     /* position: fixed !important;
@@ -20,15 +20,17 @@ body{
     color: #000 !important;
 
 } */
-.abc{
+.abc {
     background: black !important;
 }
 
-.nav-link{
+.nav-link {
     color: black !important;
 }
 
-li, li a , .add{
+li,
+li a,
+.add {
     list-style: none;
     text-decoration: none;
     color: rgb(252, 250, 250);
@@ -37,21 +39,37 @@ li, li a , .add{
 }
 
 @media screen and (max-width: 768px) {
-    .tf_topbar_icon{
+    .tf_topbar_icon {
         justify-content: center;
     }
 
-    .img1{
+    .img1 {
         width: 280px !important;
     }
 
-    .img2{
+    .img2 {
         width: 227px !important;
         bottom: -140px !important;
         right: 18px !important;
         height: 374px !important;
     }
 }
+
+@media screen and (max-width: 991.99px) {
+    .tf_appointment_img {
+        display: none;
+    }
+}
+
+/* @media screen and (min-width:992px) and (max-width:1399.99px) {
+    .tf_appointment_img {
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+        top: -100px;
+    }
+} */
+
 
 .popModel {
     position: fixed;
@@ -62,7 +80,7 @@ li, li a , .add{
     background: #000000b3;
     padding-top: 17%;
 }
- 
+
 .closeBtn {
     position: absolute;
     top: 25%;
@@ -72,7 +90,7 @@ li, li a , .add{
 
 }
 
-.tf_banner{
+.tf_banner {
 
     background-image: url(a.webp);
     background-position: center;
@@ -80,7 +98,7 @@ li, li a , .add{
     background-repeat: no-repeat;
 }
 
-.tf_banner_img::after{
+.tf_banner_img::after {
     background-image: url(banner_img_bg.png) !important;
     /* position: absolute !important; */
     content: "";
@@ -104,28 +122,29 @@ li, li a , .add{
 
 } */
 
-.tf_banner_counter h3, .tf_banner_counter p {
+.tf_banner_counter h3,
+.tf_banner_counter p {
     color: rgb(0, 132, 255)
 }
 
-.tf_common_btn{
-    border: 2px solid  rgb(0, 162, 255);
+.tf_common_btn {
+    border: 2px solid rgb(0, 162, 255);
     border-radius: 15px;
     background-color: rgb(0, 162, 255);
     text-decoration: none;
     color: aliceblue;
 }
 
-.tf_faq_details .card{
+.tf_faq_details .card {
     background-color: rgb(165, 239, 252);
 }
 
-.img1{
+.img1 {
     height: 420px;
     width: 400px;
 }
 
-.img2{
+.img2 {
     position: absolute;
     bottom: -78px;
     right: 44px;
@@ -133,7 +152,7 @@ li, li a , .add{
     height: 360px;
 }
 
-.img2 .tf_play_btn{
+.img2 .tf_play_btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -144,7 +163,7 @@ li, li a , .add{
     margin-bottom: 38px;
 } */
 
-.tf_about_iteam li{
+.tf_about_iteam li {
     color: black !important;
     font-size: 18px;
     font-weight: 500;
@@ -158,14 +177,73 @@ li, li a , .add{
 
 
 
-.fas{
+.fas {
     font-weight: 900;
 }
 
-.tf_service{
+.tf_service {
     background-image: url(service_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+.tf_process {
+    background-image: url(work_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tf_common_heading h5 {
+    color: rgb(0, 162, 255);
+}
+
+.tf_common_heading h1 {
+    font-size: 50px;
+}
+
+.tf_number_process {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 50%;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.tf_appointment_bg {
+    background: url(appointment_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* .tf_appointment_bg::after{
+    background-color: rgb(38, 0, 255);
+    
+} */
+
+.tf_appointment_img {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    top: -144px;
+}
+
+.tf_appointment_form_input input,
+.select_2,
+.tf_comman_button {
+    border-radius: 10px;
+    width: 260px;
+    padding-left: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.tf_common_appointment h2 {
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 40px;
+}
